@@ -1,0 +1,108 @@
+/* Home.css */
+
+/* Home Section */
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px; /* Add padding to give breathing room */
+    overflow: hidden;
+  }
+  
+  /* Animated background with pattern */
+  .animated-background {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, #90e0ef, #023047); /* Soft Blue to Dark Navy */
+    background-size: 40px 40px;
+    animation: movePattern 5s ease infinite;
+    z-index: -1;
+    opacity: 0.2;
+  }
+  
+  /* Keyframes for background movement */
+  @keyframes movePattern {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  /* Header styles with gradient text */
+  .header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #f1f1f1); /* Light gradient for text */
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  .header-subtitle {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #e0e0e0; /* Lighter grey text */
+    margin-bottom: 20px;
+  }
+  
+  .description-text {
+    color: #ffffff; /* White text for better contrast */
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Button container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Button styles with hover transition */
+  .textured-button {
+    background-color: rgba(59, 130, 246, 0.7);
+    background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes-light.png');
+    background-size: 8px 8px;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .textured-button:hover {
+    background-color: rgba(59, 130, 246, 1);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+    transform: translateY(-3px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Secondary button style */
+  .textured-button.secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+  
+  .textured-button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
